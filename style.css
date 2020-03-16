@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+@font-face {
+  font-family: Monument;
+  src: url("MonumentExtended-Regular.otf");
+}
+
+
+
+body {
+  color: white;
+  background-color: #161616;
+  font-family: "Monument Extended";
+}
+
+h1, h2, h6 {
+  font-family: "Monument Extended";
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+ font-size: 22px;
+ letter-spacing: 1px;
+ font-weight: 100;
+ margin-bottom: 0.7rem;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+/* Header */
+.hero-top {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 20vh;
+  margin: 3rem 0;
+}
+.header-img {
+  background: url('img/peter3times.png') no-repeat;
+  background-size: contain;
+  grid-column: 1/6;
+}
+.description {
+  grid-column: 7/11;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+.nav {
+  text-align: right;
+  grid-column: 12/13;
+  position: fixed;
+  width: 200px;
+  right: 5%;
+}
+
+/* Main */
+.hero-main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 5rem 0;
+}
+
+.dp {
+  background: url('img/dp.png') no-repeat 50% 50%;
+  width: 100%;
+  min-height: 50vh;
+  background-size: cover;
+  grid-column: 1/6;
+}
+
+/* Spinner */
+
+.spinner {
+  grid-column: 7/13;
+  text-align: center;
+  padding: 1rem;
+}
+
+.circular-text {
+  color: #000;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: "Monument Extended";
+  transition: 0.5s ease-out;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+  overflow: hidden;
+}
+
+.arrow {
+  height: 0;
+}
+
+.fa-arrow-down {
+  font-size: 100px;
+  transform: translateY(-15rem);
+}
+
+.banner {
+  -webkit-text-stroke: 2px white;
+  color: rgba(255,255,255,0);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10rem 0;
+  font-weight: 100;
+  transform: translateX(-20vw);
+  width: 120vw;
+  overflow-x: hidden;
+}
+
+.huge {
+  font-size: 66px;
+}
+
+.hollow {
+  color: white;
+  -webkit-text-stroke: 0px white;
+}
+
+.cursor-dot-outline {
+  font-size: 6px;
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+  padding-top: .75rem;
+  font-family: Monument;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  margin: auto;
+} 
+
+.project-item {
+  min-width: 70%;
+  height: 550px;
+}
+
+
+.hover-project {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+  margin: auto;
+  border: solid black 75px;
+}
+
+.hover-project:hover {
+  border: solid black 60px;
+  transform: scale(1.05);
+  filter: grayscale(0);
+  transition: 0.3s ease;
+}
+
+.bitsa-img {
+  background: url(img/bitsa@2x.png) no-repeat 50% 50%;  
+  background-size: cover;
+}
+
+a:visited, a:active {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.links {
+  margin-top: 15px;
+}
+
+.subheading {
+  font-family: "Arial";
+  text-decoration: none;
+}
+
+.subheading:hover {
+  color: white;
+  transition: ease 0.3s;
+}
+
+
+
+
+/* */

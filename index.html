@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/87110ac577.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="circletype.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cursor.css">
+  <title>Peter Phanouvong's Portfolio </title>
+  
+</head>
+<body data-barba="wrapper">
+  <main data-barba="container" data-barba-namespace="home">
+    <div class="container hero">
+      <div class="hero-top">
+        <div class="header-img"></div>
+        <div class="description">
+          <h2>Frontend Developer Designer</h2>
+          <p>I'm a Sydney based developer developing cool <br> stuff for the web.</p>
+        </div>
+        <div class="nav">
+          <h2>2020 Portfolio</h2>
+          <h6>.projects</h6>
+          <h6>.contact</h6>
+        </div>
+      </div>
+      <div class="hero-main">
+        <div class="dp hover-me"></div>
+        <div class="spinner">
+          <div class="circular-text">
+            <span id="rotated">· design · animation · style · development · creativity · love · fun · experience </span>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fas fa-arrow-down"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner-1"><h1 class="huge">ProjectsProjectsProjectsProjectsProjects</h1></div>
+      <div class="banner-2"><h1 class="huge">ProjectsProjects<span class="hollow">Projects</span>Projects</h1></div>
+      <div class="banner-3"><h1 class="huge">ProjectsProjectsProjectsProjectsProjects</h1></div>
+    </div>
+
+    <div class="container">
+      <div class="project-section">
+        <div class="project-item">
+          <a href="/bitsa.html"><div class="bitsa-img hover-project"></div></a>
+          <div class="links">
+            <a class="subheading" href="https://bitsa.org.au/">See Live Demo</a>
+            <a class="subheading" href="https://github.com/BITSA-UNSW/bitsa-website">See Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="cursor-dot-outline"></div>
+  <div class="cursor-dot"></div>
+</body>
+<script>
+  const circleType = new CircleType(
+    document.getElementById("rotated"));
+    circleType.radius(80);
+
+  $(window).scroll(function() {
+    var offset = $(window).scrollTop();
+    offset = offset * 0.4;
+
+    $(".circular-text").css({
+      "-moz-transform" : "rotate(" + offset  + "deg)",
+      "-webkit-transform" : "rotate(" + offset  + "deg)",
+      "-o-transform" : "rotate(" + offset  + "deg)", 
+      "-ms-transform" : "rotate(" + offset  + "deg)",
+      "transform" : "rotate(" + offset  + "deg)",
+    });
+
+    $(".banner-1").css({
+      "transform" : "translateX(" + offset + "px)"
+    });
+    $(".banner-2").css({
+      "transform" : "translateX(-" + offset + "px)"
+    });
+    $(".banner-3").css({
+      "transform" : "translateX(" + offset + "px)"
+    });
+  })
+</script>
+<script src="cursor.js"></script>
+<script src="main-Peter’s MacBook Air.js"></script>
+</html>
+
+<!--My friend and colleague Alex, the head of the digital sub comittee at BITSA came to me to help build the website for their society. When I got access to it, it was just plain HTML and CSS with little functionality. It was difficult to add content and update the site. To help alleviate the problem I did a design overhaul in the front end and the backend, having the site run on django which would allow admin to make changes and add content easily, whilst also making it look a bit prettier.-->
