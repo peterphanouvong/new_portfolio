@@ -57,7 +57,7 @@ h6 {
   margin: 3rem 0;
 }
 .header-img {
-  background: url('img/peter3times.png') no-repeat;
+  background: url('/img/peter3times.png') no-repeat;
   background-size: contain;
   grid-column: 1/6;
 }
@@ -85,7 +85,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .dp {
-  background: url('img/dp.png') no-repeat 50% 50%;
+  background: url('/img/dp.png') no-repeat 50% 50%;
   width: 100%;
   min-height: 50vh;
   background-size: cover;
@@ -182,7 +182,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .bitsa-img {
-  background: url(img/bitsa@2x.png) no-repeat 50% 50%;  
+  background: url('/img/bitsa@2x.png') no-repeat 50% 50%;  
   background-size: cover;
 }
 
