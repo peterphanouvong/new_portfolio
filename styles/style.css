@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 
@@ -24,6 +25,7 @@ body {
   background-color: #161616;
   font-family: "Monument Extended";
 }
+
 
 h1, h2, h6 {
   font-family: "Monument Extended";
@@ -76,16 +78,19 @@ h6:active {
   grid-column: 7/11;
 }
 
+.phone-banner {
+  display: none;
+}
+
 a, a:visited, a:hover, a:active {
   color: inherit;
 }
 
 .nav {
+  /* position: fixed;
   text-align: right;
-  grid-column: 12/13;
-  position: fixed;
-  width: 200px;
   right: 5%;
+  width: 200px; */
 }
 
 /* Main */
@@ -119,6 +124,7 @@ a, a:visited, a:hover, a:active {
   transition: 0.5s ease-out;
   -webkit-text-stroke: 1px rgba(255,255,255,0.5);
   overflow: hidden;
+  width: 100%;
 }
 
 .arrow {
@@ -223,7 +229,58 @@ footer {
 .email {
   color: blue;
   margin-bottom: 3rem;
+  overflow-wrap: break-word;
 }
 
 
-/* */
+@media only screen and (max-width:1280px) {
+  .hero-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  .header-img {
+    height: 300px;
+    width: 100%;
+  }
+  .hero-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem auto;
+    min-height: 400px;
+  }
+  .project-item {
+    height: 350px;
+    width: 100%;
+    
+  }
+  .banner {
+    display:none;
+  }
+
+  .phone-banner {
+    display: initial;
+    margin: auto;
+    text-emphasis: center;
+    margin: 3rem 0;
+    text-transform: uppercase;
+  }
+  .dp {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 3rem;
+  }
+  footer {
+    margin: 3rem 0;
+  }
+
+  .hover-project {
+    border: none;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
