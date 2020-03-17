@@ -1,11 +1,7 @@
 html,
-body {
-  cursor: none;      
+body {    
 }
 
-a {
-  cursor: none;
-}
 
 .cursor-dot,
 .cursor-dot-outline {
