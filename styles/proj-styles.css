@@ -1,0 +1,61 @@
+body {
+  background-color: white;
+  color: #161616;
+}
+
+.proj-hero-img {
+  height: 100vh;
+  width: 100vw;
+  transition: 0.3s ease;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.proj-hero-img:hover {
+  filter: grayscale(0.4);
+  transition: 0.5s ease;
+}
+
+.proj-title-block {
+  background-color: white;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+} 
+
+.proj-title-links {
+  display: flex;
+  height: 0;
+  justify-content: center;
+}
+
+.proj-title-links > a {
+  padding: .1rem .5rem;
+  transition: 0.3s ease;
+}
+
+.proj-title-links > a:hover {
+  color: black;
+  transition: 0.3s ease;
+}
+
+.proj-title {
+  color: black;
+  text-align: center;
+}
+
+.proj-container {
+  width: 70%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.tech-logo {
+  width: 35px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
