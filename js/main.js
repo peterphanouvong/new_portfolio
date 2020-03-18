@@ -39,3 +39,4 @@ TweenMax.to('.fa-arrow-down', 0.7, {
     opacity: 0,
     ease: Expo.easeInOut
   })
+
